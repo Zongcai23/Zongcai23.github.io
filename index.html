@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Zongcai Tan | Biomedical Microrobotics & AI</title>
+  <meta name="description" content="Zongcai Tan is a PhD student in Bioengineering at Imperial College London, working on biomedical microrobotics, optical manipulation, digital twins, and AI-enabled control." />
+  <meta name="author" content="Zongcai Tan" />
+  <link rel="canonical" href="https://Zongcai23.github.io/" />
+
+  <meta property="og:title" content="Zongcai Tan | Biomedical Microrobotics & AI" />
+  <meta property="og:description" content="Academic homepage of Zongcai Tan, PhD student in Bioengineering at Imperial College London." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://Zongcai23.github.io/" />
+  <meta property="og:image" content="https://Zongcai23.github.io/assets/profile_enhanced.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zongcai Tan",
+    "alternateName": "Thomas Tan",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Imperial College London"},
+    "jobTitle": "PhD Student in Bioengineering",
+    "email": "mailto:j.tan23@imperial.ac.uk",
+    "url": "https://Zongcai23.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/zongcai-tan-105498295/",
+      "https://www.researchgate.net/scientific-contributions/Zongcai-Tan-2283317619"
+    ],
+    "knowsAbout": ["Biomedical microrobotics", "Optical tweezers", "Digital twins", "Microscopy perception", "AI-enabled control"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --imperial:#003E74;
+      --imperial-dark:#002147;
+      --imperial-blue:#006EB6;
+      --cream:#faf8ef;
+      --card:#ffffff;
+      --text:#222936;
+      --muted:#667085;
+      --line:#e5dfd1;
+      --soft:#eef6ff;
+      --shadow:0 16px 38px rgba(0,33,71,.10);
+      --radius:24px;
+      --font-body:Cambria, Georgia, "Times New Roman", serif;
+      --font-ui:"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --font-display:"Avenir Next", "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+      --font-section:"Gill Sans", "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(0,110,182,.10), transparent 34rem),
+        linear-gradient(180deg,#fffdf7 0%,#f7f4ea 100%);
+      line-height:1.62;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{text-decoration:none;color:inherit}
+    button{font:inherit}
+    .top-rule{height:6px;background:#24272c}
+    .imperial-head{
+      background:#fffdf7;
+      border-bottom:1px solid rgba(229,224,210,.95);
+      box-shadow:0 4px 18px rgba(0,0,0,.035);
+    }
+    .imperial-inner{
+      max-width:1160px;margin:0 auto;padding:16px 24px 8px;
+      display:flex;align-items:flex-end;justify-content:space-between;gap:22px;
+    }
+    .imperial-logo-img{width:260px;max-width:70vw;display:block;object-fit:contain}
+    .imperial-sub{
+      font-family:var(--font-ui);
+      color:#4b5563;
+      font-size:13px;
+      margin-top:7px;
+      letter-spacing:.025em;
+    }
+    .nav{
+      max-width:1160px;margin:0 auto;padding:0 24px 12px;
+      display:flex;gap:26px;flex-wrap:wrap;
+      color:#5f6570;
+      font-family:var(--font-section);
+      font-size:14px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .nav a{padding:8px 0;border-bottom:2px solid transparent}
+    .nav a:hover{color:var(--imperial);border-bottom-color:var(--imperial)}
+
+    .wrap{max-width:1160px;margin:0 auto;padding:28px 24px 72px}
+    .hero{display:grid;grid-template-columns:320px minmax(0,1fr);gap:24px;align-items:stretch}
+    .profile-card{
+      background:linear-gradient(160deg,var(--imperial) 0%,#0b4f86 55%,var(--imperial-dark) 100%);
+      color:#fff;border-radius:var(--radius);padding:28px 24px 24px;box-shadow:var(--shadow);
+      display:flex;flex-direction:column;align-items:center;text-align:center;
+    }
+    .avatar-ring{
+      width:166px;height:166px;border-radius:50%;padding:9px;background:rgba(255,255,255,.16);
+      display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);
+    }
+    .avatar{width:100%;height:100%;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.88);background:#fff}
+    .name{
+      margin:18px 0 4px;
+      font-family:var(--font-display);
+      font-size:24px;
+      font-weight:700;
+      letter-spacing:-.025em;
+    }
+    .role{
+      margin:0;color:rgba(255,255,255,.84);
+      font-family:var(--font-ui);
+      font-size:14px;line-height:1.48;
+    }
+    .icon-row{margin-top:20px;display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+    .icon-btn{
+      width:46px;height:46px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+      background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.20);color:white;transition:.18s ease;
+      font-family:var(--font-ui);font-weight:800;
+    }
+    .icon-btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.23)}
+    .icon-btn svg{width:22px;height:22px;fill:currentColor}
+    .icon-btn .text-icon{font-size:15px;letter-spacing:-.02em}
+    .profile-note{
+      margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);
+      color:rgba(255,255,255,.78);
+      font-family:var(--font-ui);
+      font-size:12.5px;line-height:1.5;
+    }
+
+    .main-card,.panel,.pub,.news-item,.contact-card,.research-card{
+      background:rgba(255,255,255,.95);
+      border:1px solid rgba(229,224,210,.95);
+      box-shadow:0 12px 30px rgba(0,33,71,.055);
+      border-radius:var(--radius);
+    }
+    .main-card{padding:34px 36px 30px}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;
+      background:#edf7ff;color:var(--imperial);
+      font-family:var(--font-ui);
+      font-size:13px;font-weight:700;letter-spacing:.005em;
+      margin-bottom:15px;
+    }
+    h1{
+      margin:0;color:var(--imperial-dark);
+      font-family:var(--font-display);
+      font-size:clamp(34px,5vw,53px);
+      line-height:1.05;
+      letter-spacing:-.045em;
+      font-weight:680;
+    }
+    .lead{
+      max-width:780px;margin:18px 0 0;
+      color:#374151;
+      font-family:var(--font-body);
+      font-size:18px;
+      line-height:1.64;
+    }
+    .tag-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}
+    .tag{
+      padding:8px 12px;border-radius:999px;background:#f0f6fb;color:#405166;
+      font-family:var(--font-ui);
+      font-size:13px;font-weight:650;
+    }
+
+    .section{margin-top:24px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 0 12px}
+    .section-head h2{
+      margin:0;
+      color:var(--imperial);
+      font-family:var(--font-section);
+      font-size:22px;
+      font-weight:650;
+      letter-spacing:.105em;
+      text-transform:uppercase;
+    }
+    .section-head span{
+      color:var(--muted);
+      font-family:var(--font-ui);
+      font-size:13px;
+      letter-spacing:.01em;
+    }
+    .panel{padding:22px}
+    .panel p{margin:0;color:#384152}
+    .collab-intro{font-family:var(--font-body);font-size:16px;line-height:1.65}
+    .seek-grid{margin-top:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .seek-card{background:#fff;border:1px solid #e4edf7;border-radius:18px;padding:15px}
+    .seek-icon{
+      width:40px;height:40px;border-radius:14px;background:#eef7ff;color:var(--imperial);
+      display:flex;align-items:center;justify-content:center;margin-bottom:10px;
+    }
+    .seek-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .seek-card b{
+      display:block;color:var(--imperial-dark);
+      font-family:var(--font-display);
+      font-size:15px;
+      margin-bottom:5px;
+      font-weight:720;
+      letter-spacing:-.008em;
+    }
+    .seek-card p{font-family:var(--font-body);font-size:14px;color:#556070;line-height:1.45;margin:0}
+    .collab-note{margin-top:14px!important;color:#526071!important;font-family:var(--font-body);font-size:14.5px}
+
+    .research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .research-card{padding:18px}
+    .research-icon{
+      width:40px;height:40px;border-radius:14px;background:#eef7ff;color:var(--imperial);
+      display:flex;align-items:center;justify-content:center;margin-bottom:11px;
+    }
+    .research-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .research-card h3{
+      margin:0 0 7px;
+      font-family:var(--font-display);
+      font-size:16px;
+      color:var(--imperial-dark);
+      letter-spacing:-.015em;
+      font-weight:720;
+    }
+    .research-card p{margin:0;color:#4b5563;font-family:var(--font-body);font-size:14px;line-height:1.48}
+
+    .news-list{display:grid;gap:10px}
+    .news-item{display:grid;grid-template-columns:108px 1fr;gap:14px;padding:14px 16px;border-radius:18px}
+    .date{font-family:var(--font-ui);font-weight:750;color:var(--imperial);font-size:14px;letter-spacing:.01em}
+    .news-item p{margin:0;color:#374151;font-family:var(--font-body);font-size:15.5px;line-height:1.55}
+
+    .pub-list{display:grid;gap:12px}
+    .pub{padding:16px 18px;border-radius:18px}
+    .pub h3{
+      margin:0 0 5px;
+      font-family:var(--font-display);
+      font-size:15.9px;
+      line-height:1.42;
+      color:#1f2937;
+      letter-spacing:-.012em;
+      font-weight:710;
+    }
+    .pub p{margin:0;color:#667085;font-family:var(--font-body);font-size:14.5px}
+    .authors{margin-top:4px!important}
+    .paper-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px!important}
+    .link-chip{
+      border:0;display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;
+      background:#eef6ff;color:var(--imperial);
+      font-family:var(--font-ui);
+      font-size:12px;font-weight:700;cursor:pointer;
+    }
+    .link-chip:hover{background:#dcefff;text-decoration:none}
+
+    .contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .contact-card{padding:18px;border-radius:18px}
+    .contact-card b{display:block;color:var(--imperial-dark);font-family:var(--font-display);margin-bottom:4px;font-weight:720}
+    .contact-card span{color:#4b5563;font-family:var(--font-body);font-size:14.5px}
+    footer{
+      margin-top:34px;color:var(--muted);
+      font-family:var(--font-ui);
+      font-size:13px;
+      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+    }
+
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,33,71,.68);z-index:100;padding:20px}
+    .modal:target{display:flex}
+    .modal-card{width:min(420px,100%);background:white;border-radius:24px;padding:20px;text-align:center;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+    .modal-card img{max-width:100%;width:300px;border-radius:18px;border:1px solid var(--line)}
+    .modal-card h3{margin:6px 0 8px;color:var(--imperial-dark);font-family:var(--font-display)}
+    .modal-card p{margin:0 0 10px;color:var(--muted);font-size:14px;font-family:var(--font-ui)}
+    .close-btn{display:inline-block;margin-top:12px;padding:9px 14px;border-radius:999px;background:#f3f6fa;font-family:var(--font-ui);font-weight:700;color:var(--imperial-dark)}
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .profile-card{max-width:520px}
+      .seek-grid{grid-template-columns:1fr}
+      .research-grid,.contact-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .imperial-inner{align-items:flex-start;flex-direction:column}
+      .imperial-logo-img{width:230px}
+      .wrap{padding:22px 16px 56px}
+      .main-card{padding:25px 20px}
+      .news-item{grid-template-columns:1fr;gap:5px}
+    }
+  </style>
+</head>
+<body>
+  <div class="top-rule"></div>
+  <header class="imperial-head">
+    <div class="imperial-inner">
+      <div>
+        <img class="imperial-logo-img" src="assets/imperial_logo.png" alt="Imperial College London logo">
+        <div class="imperial-sub">Department of Bioengineering · Imperial College London</div>
+      </div>
+      <div class="imperial-sub">Academic personal homepage</div>
+    </div>
+    <nav class="nav">
+      <a href="#collaboration">Collaboration</a>
+      <a href="#research">Research</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <div class="hero">
+      <aside class="profile-card">
+        <div class="avatar-ring"><img class="avatar" src="assets/profile_enhanced.png" alt="Portrait of Zongcai Tan"></div>
+        <div class="name">Zongcai Tan</div>
+        <p class="role">PhD Student · Bioengineering<br>Imperial College London</p>
+        <div class="icon-row" aria-label="Social links">
+          <a class="icon-btn" href="mailto:j.tan23@imperial.ac.uk" title="Email" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 2L12 11.35 4.4 6ZM4 18V8.25l7.4 5.1a1 1 0 0 0 1.2 0L20 8.25V18Z"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/zongcai-tan-105498295/" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn"><span class="text-icon">in</span></a>
+          <a class="icon-btn" href="https://www.researchgate.net/scientific-contributions/Zongcai-Tan-2283317619" target="_blank" rel="noreferrer" title="ResearchGate" aria-label="ResearchGate"><span class="text-icon">RG</span></a>
+          <a class="icon-btn" href="#wechat" title="WeChat" aria-label="WeChat"><svg viewBox="0 0 24 24"><path d="M9.4 5C5.8 5 3 7.2 3 10c0 1.6.9 3 2.3 3.9L4.8 16l2.3-1.1c.7.2 1.5.3 2.3.3 3.6 0 6.4-2.2 6.4-5.1S13 5 9.4 5Zm-2 4.1a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6Zm4 0a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6Zm4.1 7.7c-.6 0-1.2-.1-1.7-.2L12 17.5l.4-1.5c-1-.7-1.6-1.7-1.6-2.8 0-2.2 2.2-3.9 5-3.9s5 1.7 5 3.9-2.3 3.6-5.3 3.6Zm-1.4-4.2a.65.65 0 1 0 0 1.3.65.65 0 0 0 0-1.3Zm3.2 0a.65.65 0 1 0 0 1.3.65.65 0 0 0 0-1.3Z"/></svg></a>
+        </div>
+        <div class="profile-note">Biomedical microrobotics · optical tweezers · digital twins · AI-enabled control</div>
+      </aside>
+
+      <section class="main-card">
+        <span class="pill">Open to interdisciplinary collaboration</span>
+        <h1>Biomedical microrobotics, optical manipulation, and AI.</h1>
+        <p class="lead">I study intelligent micro-scale robotic systems for biomedical contexts, with research interests shaped by optical-tweezers manipulation, digital-twin modelling, microscopy perception, and AI-enabled control.</p>
+        <div class="tag-row"><span class="tag">Optical microrobotics</span><span class="tag">Digital twins</span><span class="tag">Microscopy perception</span><span class="tag">AI control</span><span class="tag">Human-in-the-loop systems</span></div>
+      </section>
+    </div>
+
+    <section id="collaboration" class="section">
+      <div class="section-head"><h2>Collaboration</h2><span>Who I am looking for</span></div>
+      <div class="panel">
+        <p class="collab-intro">I am looking for collaborators who can bring real biological or biomedical experimental scenarios where micro-scale manipulation may be useful.</p>
+        <div class="seek-grid">
+          <div class="seek-card">
+            <div class="seek-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6"/><path d="M10 3v5.5l-4.2 7A3.5 3.5 0 0 0 8.8 21h6.4a3.5 3.5 0 0 0 3-5.5l-4.2-7V3"/><path d="M8 16h8"/><path d="M10 18h4"/></svg></div>
+            <b>Cell biology / biomedical labs</b>
+            <p>Groups with cell handling needs, biological samples, assays, or microscopy-based experimental workflows.</p>
+          </div>
+          <div class="seek-card">
+            <div class="seek-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h4v2H7z"/><path d="M13 13h4v2h-4z"/><path d="M11 10h2"/><path d="M9 15h4"/><path d="M17 14h2"/></svg></div>
+            <b>Microfluidics / lab-on-chip</b>
+            <p>Researchers developing chips, channels, sorting devices, sample-preparation platforms, or on-chip imaging systems.</p>
+          </div>
+          <div class="seek-card">
+            <div class="seek-icon"><svg viewBox="0 0 24 24"><path d="M7 21h10"/><path d="M10 21v-4"/><path d="M14 21v-4"/><path d="M8 17h8"/><path d="M14 4l3 3-6 6-3-3z"/><path d="M5 14l3-3"/><path d="M15 5l2-2"/><path d="M7 17a5 5 0 0 1 5-5"/></svg></div>
+            <b>Microscopy / optical systems</b>
+            <p>Collaborators interested in visual feedback, optical manipulation, imaging, or experimental validation at the microscale.</p>
+          </div>
+        </div>
+        <p class="collab-note">The most useful collaboration would combine a clear biological question or experimental platform with my background in optical microrobotics, digital twins, perception, and AI-enabled control.</p>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-head"><h2>Research</h2><span>Core themes</span></div>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="15.5" cy="7.5" r="2.5"/><circle cx="15" cy="16" r="3.5"/><path d="M10.5 10.5l2.5 3"/><path d="M13.2 8.7l-2.5.5"/></svg></div>
+          <h3>Biomedical microrobotics</h3>
+          <p>Micro-scale robotic systems for biomedical contexts, especially where precision, safety, and interaction matter.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon"><svg viewBox="0 0 24 24"><path d="M4 18h16"/><path d="M6 18v-3"/><path d="M18 18v-3"/><path d="M9 15h6"/><circle cx="12" cy="11" r="2.5"/><path d="M5 7c4-3 10-3 14 0"/><path d="M7.5 9c2.8-1.8 6.2-1.8 9 0"/></svg></div>
+          <h3>Physics-informed perception</h3>
+          <p>Simulation, microscopy image formation, pose estimation, and data-efficient sim-to-real learning.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 15l1.2-6h1.6L12 15"/><path d="M8.4 13h3.2"/><path d="M15 9v6"/><path d="M13 9h4"/><path d="M13 15h4"/></svg></div>
+          <h3>AI and shared control</h3>
+          <p>Reinforcement learning, haptic interaction, digital twins, and human-in-the-loop robotic control.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <div class="section-head"><h2>News</h2><span>Recent updates</span></div>
+      <div class="news-list">
+        <div class="news-item"><div class="date">May 2026</div><p>Our review on embodied cross-domain intelligence in biomedical microrobots was accepted by <em>Cyborg and Bionic Systems</em>.</p></div>
+        <div class="news-item"><div class="date">May 2026</div><p>Our work on digital-twin-driven haptic teleoperation of optical microrobots received a Best Paper nomination at IEEE MARSS 2026.</p></div>
+        <div class="news-item"><div class="date">Apr 2026</div><p>Runner-up, Amazon PhD Prize for Outstanding Achievements in Robotics.</p></div>
+        <div class="news-item"><div class="date">Jan 2026</div><p>Our paper on physics-informed sim-to-real data augmentation was accepted by ICRA 2026.</p></div>
+        <div class="news-item"><div class="date">Oct 2025</div><p>Started PhD research in Bioengineering at Imperial College London.</p></div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-head"><h2>Publications</h2><span>Links and DOI</span></div>
+      <div class="pub-list">
+        <article class="pub"><h3>Embodied Cross-Domain Intelligence in Biomedical Microrobots: A Review</h3><p class="authors">Zongcai Tan, Lan Wei, Kangyi Lu, Dandan Zhang</p><p>Cyborg and Bionic Systems, 2026</p><p class="paper-links"><a class="link-chip" href="https://doi.org/10.34133/cbsystems.0546" target="_blank" rel="noreferrer">DOI</a></p></article>
+        <article class="pub"><h3>Digital Twin-Driven Haptic Teleoperation Framework for Complex-Shaped Microrobots Actuated by Optical Tweezers</h3><p class="authors">Zongcai Tan, Lan Wei, Dandan Zhang</p><p>IEEE MARSS 2026 · Best Paper nomination</p><p class="paper-links"><span class="link-chip">Link pending</span></p></article>
+        <article class="pub"><h3>Physics-Informed Machine Learning for Efficient Sim-to-Real Data Augmentation in Micro-Object Pose Estimation</h3><p class="authors">Zongcai Tan*, Lan Wei*, Dandan Zhang</p><p>ICRA 2026</p><p class="paper-links"><a class="link-chip" href="https://arxiv.org/abs/2511.16494" target="_blank" rel="noreferrer">arXiv</a><a class="link-chip" href="https://doi.org/10.48550/arXiv.2511.16494" target="_blank" rel="noreferrer">DOI</a></p></article>
+        <article class="pub"><h3>Interactive OT Gym: A Reinforcement Learning-Based Interactive Optical Tweezer-Driven Microrobotics Simulation Platform</h3><p class="authors">Zongcai Tan, Dandan Zhang</p><p>ICRA 2025</p><p class="paper-links"><a class="link-chip" href="https://doi.org/10.1109/ICRA55743.2025.11127419" target="_blank" rel="noreferrer">DOI</a><a class="link-chip" href="https://arxiv.org/abs/2505.20751" target="_blank" rel="noreferrer">arXiv</a></p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head"><h2>Contact</h2><span>Get in touch</span></div>
+      <div class="contact-grid">
+        <div class="contact-card"><b>Email</b><span><a href="mailto:j.tan23@imperial.ac.uk">j.tan23@imperial.ac.uk</a></span></div>
+        <div class="contact-card"><b>Profiles</b><span><a href="https://www.linkedin.com/in/zongcai-tan-105498295/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://www.researchgate.net/scientific-contributions/Zongcai-Tan-2283317619" target="_blank" rel="noreferrer">ResearchGate</a></span></div>
+        <div class="contact-card"><b>Collaboration</b><span>Microrobotics, optical manipulation, digital twins, and AI-enabled control.</span></div>
+      </div>
+    </section>
+
+    <footer><span>© Zongcai Tan</span><span>Academic personal homepage</span></footer>
+  </main>
+
+  <div id="wechat" class="modal" aria-label="WeChat QR code"><div class="modal-card"><h3>WeChat</h3><p>Please include your institution, name, and reason when adding me.</p><img src="assets/wechat_qr.jpg" alt="WeChat QR code"><br><a class="close-btn" href="#top">Close</a></div></div>
+</body>
+</html>
